@@ -25,3 +25,32 @@ The goal is to explore sales patterns and create meaningful visualizations to su
 2) Install dependencies:
 ```bash
 pip install pandas matplotlib seaborn openpyxl xlrd
+
+## 📊 Forecasting & Business Insights
+
+### 🔮 Sales Forecast (ARIMA)
+We used an ARIMA model to forecast **monthly sales for the next 12 months**.  
+The forecast shows:
+- A steady upward trend in sales over time.
+- Seasonal spikes around **November–December**, indicating holiday season demand.
+
+![Sales Forecast](plots/sales_forecast_arima.png)
+
+---
+
+### 📉 Seasonal Decomposition
+By decomposing sales into **trend, seasonality, and residuals**, we observed:
+- **Trend**: Long-term growth in overall sales.
+- **Seasonality**: Recurring spikes in Q4 each year (holiday effect).
+- **Residuals**: Short-term fluctuations likely caused by promotions/discounts.
+
+![Seasonal Decomposition](plots/sales_decomposition.png)
+
+---
+
+### ✅ Business Recommendations
+1. **Stock Planning** → Increase inventory before November–December to capture peak demand.  
+2. **Discount Strategy** → Optimize discounts in Q4, as sales rise naturally during this period.  
+3. **Regional Focus** → Expand marketing in underperforming regions (from EDA insights).  
+4. **Profitability Check** → Limit deep discounts on low-margin products (Discount vs Profit analysis).  
+
